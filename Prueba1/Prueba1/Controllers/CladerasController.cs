@@ -37,6 +37,11 @@ namespace Prueba1.Controllers
             return Ok(cladera);
         }
 
+        public IHttpActionResult PostStudent(Cladera expected)
+        {
+            throw new NotImplementedException();
+        }
+
         // PUT: api/Claderas/5
         [Authorize]
         [ResponseType(typeof(void))]
