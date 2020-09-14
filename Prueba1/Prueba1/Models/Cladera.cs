@@ -25,13 +25,15 @@ namespace Prueba1.Models
         [Display(Name = "Nombre Completo")]
         public string FriendofCladera { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Se debe ingrasear este campo")]
         public CategoryType Place { get; set; }
 
         [EmailAddress]
         public string Email { get; set; }
 
         [Display(Name = "Cumpleaños")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Birthdate { get; set; }
 
     }

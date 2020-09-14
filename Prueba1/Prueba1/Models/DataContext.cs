@@ -12,5 +12,7 @@ namespace Prueba1.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<Prueba1.Models.Cladera> Claderas { get; set; }
     }
 }
